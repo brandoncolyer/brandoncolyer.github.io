@@ -16,7 +16,7 @@ lightbox.appendChild(lightboxImage);
 document.body.appendChild(lightbox);
 
 // Select gallery images
-const images = document.querySelectorAll(".gallery img, .gallery2 img");
+const images = document.querySelectorAll(".gallery img");
 
 // Open image when clicked
 images.forEach(image => {
@@ -37,3 +37,4 @@ lightbox.addEventListener("click", (e) => {
         lightbox.style.display = "none";
     }
 });
+
