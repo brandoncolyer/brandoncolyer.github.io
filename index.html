@@ -8,16 +8,71 @@
 <body>
 
     <header>
+        <div class="logo">
+            <img src="photos/Mile-High.png" alt="Logo — photo of plants" class="logo-img">
+        </div>
         <h1>Photo Gallery Test</h1>
         <p>Click a Photo to expand it</p>
+        <a id="login-link" href="login.html">Login</a>
     </header>
 
     <main class="gallery">
-        <img src="photos/IMG_3167.JPG" alt="Plants">
-        <img src="photos/IMG_3177.JPG" alt="Plane">
-        <img src="photos/IMG_3181.JPG" alt="Car">
+        <section class="gallery-item">
+            <img src="photos/IMG_3167.JPG" alt="Plants">
+            <div class="desc">
+                <h2>Plants</h2>
+                <p>Close-up of leafy plants — vibrant greens and textures.</p>
+            </div>
+        </section>
+
+        <section class="gallery-item">
+            <img src="photos/IMG_3177.JPG" alt="Plane">
+            <div class="desc">
+                <h2>Plane</h2>
+                <p>A plane captured mid-flight with moody sky lighting.</p>
+            </div>
+        </section>
+
+        <section class="gallery-item">
+            <img src="photos/IMG_3181.JPG" alt="Car">
+            <div class="desc">
+                <h2>Car</h2>
+                <p>Street shot of a classic car with interesting reflections.</p>
+            </div>
+        </section>
     </main>
-    
+
+    <section class="support-section">
+        <div class="support-inner">
+            <button id="support-btn" class="support-btn" aria-label="Support Here">Support Here</button>
+
+            <div class="support-progress" aria-label="Photography support" role="group">
+                <div class="progress-label">Photography Support</div>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="progress-value">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div id="progress-value" class="progress-value">0 / 100</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1>Thanks for Visiting!</h1>
+        <div class="social">
+            <a class="social-link instagram" href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm6.8-3.6a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/>
+                </svg>
+            </a>
+            <a class="social-link x" href="https://x.com/your_username" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <line x1="4" y1="4" x2="20" y2="20" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="20" y1="4" x2="4" y2="20" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
     <!-- Lightbox overlay -->
     <div id="lightbox">
         <img id="lightbox-img">
@@ -26,4 +81,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
